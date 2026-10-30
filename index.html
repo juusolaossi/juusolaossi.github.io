@@ -428,7 +428,7 @@ p:last-child{margin-bottom:0}
       <div class="contactrow">
         <a class="btn" href="tel:+358451333987">+358 45 133 3987</a>
         <a class="btn" href="https://www.linkedin.com/in/ossijuusola/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="cv.pdf" data-t="ctaCv"></a>
+        <a class="btn" href="CV_Ossi_Juusola_FI.pdf" download data-t="ctaCv" data-href="cvFile"></a>
       </div>
       <p class="refnote" data-t="refs"></p>
       <p class="foot" data-t="footer"></p>
@@ -556,6 +556,7 @@ fi: {
   ctaTitle:"Etsin seuraavaa tehtävää, mieluiten pääkaupunkiseudulta",
   ctaBody:"Kiinnostavat myös tehtävät muualla Suomessa ja Euroopassa, ulkomailla sekä etätyönä. Parhaiten sovin työhön, jossa luova markkinointi ja tekninen, analyyttinen ote kohtaavat. Nopeimmin tavoitat minut sähköpostilla.",
   ctaCv:"Lataa CV (PDF)",
+  cvFile:"CV_Ossi_Juusola_FI.pdf",
   refs:"Suosittelijat ja työtodistukset pyydettäessä.",
   footer:"Ossi Juusola · Päivitetty 2026"
 },
@@ -672,6 +673,7 @@ en: {
   ctaTitle:"Looking for my next role, ideally in the Helsinki area",
   ctaBody:"I'm also open to roles elsewhere in Finland and Europe, abroad and remote. The best fit is work where creative marketing meets a technical, analytical side. Email is the fastest way to reach me.",
   ctaCv:"Download CV (PDF)",
+  cvFile:"CV_Ossi_Juusola_EN.pdf",
   refs:"References and work certificates available on request.",
   footer:"Ossi Juusola · Updated 2026"
 }
@@ -748,6 +750,10 @@ function render(lang){
   document.querySelectorAll('[data-alt]').forEach(el => {
     const v = c[el.dataset.alt];
     if (v !== undefined) el.alt = v;
+  });
+  document.querySelectorAll('[data-href]').forEach(el => {
+    const v = c[el.dataset.href];
+    if (v !== undefined) el.href = v;
   });
   document.querySelectorAll('[data-list]').forEach(el => {
     const k = el.dataset.list;
