@@ -66,7 +66,8 @@ img{max-width:100%;display:block}
 .wrap{max-width:88rem;margin:0 auto;padding:0 1.5rem}
 @media (min-width:64rem){.wrap{padding:0 4rem 0 calc(var(--nav) + 2rem)}}
 .measure{max-width:42rem}
-[data-t="profileBody"]{white-space:pre-line}
+[data-t="profileBody"],[data-t="ctaBody"]{white-space:pre-line}
+.lead:empty{display:none}
 
 .t-light{background:var(--lumi)}
 .t-birch{background:var(--koivu)}
@@ -450,7 +451,7 @@ fi: {
   heroKicker:"Ossi Juusola · Markkinoinnin maisteri",
   heroGreet:"Moikka, olen Ossi.",
   heroWelcome:"Tervetuloa!",
-  heroThesis:"Markkinoija, brändistrategi ja kiipeilijä. Tällä hetkellä markkinointia nature tech -startupissa Abu Dhabissa.",
+  heroThesis:"Olen markkinoija, brändistrategi ja luova designeri. Tällä hetkellä markkinoinnin harjoittelijana nature tech -startupissa Abu Dhabissa.",
   scrollCue:"Selaa alas",
 
   navProfile:"Profiili", navNow:"Nykyinen tehtävä", navExp:"Työkokemus",
@@ -458,9 +459,9 @@ fi: {
   navLife:"Vapaa-ajalla", navContact:"Yhteystiedot",
 
   profileEyebrow:"Profiili",
-  profileTitle:"Markkinointia, designia ja tekoälyä",
-  profileLead:"Luova, tarkka ja parhaimmillaan tiimissä. Minulla on kokemusta kansainvälisissä ympäristöissä markkinoinnin, brändäyksen, tekoälyn ja vastuullisuuden parissa, ja opettelen jatkuvasti jotain uutta.",
-  profileBody:"Teen markkinointia nature tech -startupissa Abu Dhabissa. Johdan luovia projekteja, suunnittelen kampanjoita, toimin edustajana konferensseissa, rakennan tekoälytyönkulkuja ja vastaan SEO-kehityksestä. Sitä ennen työskentelin innovaatiokonsultointiyrityksessä, pankissa ja Verohallinnossa tehtävissä, joissa olin paljon tekemisissä asiakkaiden kanssa.\n\nIntohimoni urheiluun johti minut markkinoinnin uralle. Kirjoitin sekä kandidaatintutkielmani että pro graduni brändiuskollisuuden ja -pääoman rakentamisesta urheilijavaikuttajien avulla, ja valmistuin Oulun yliopistosta markkinoinnin maisteriksi. Nyt haluan rakentaa ratkaisuja ja tuotteita, jotka auttavat ihmisiä ja tekevät hyvää ympäristölle.\n\nVapaa-ajalla kiipeilen, vaellan, pelaan jalkapalloa ja matkustan, ja löydän inspiraationi uusiin ihmisiin ja kulttuureihin tutustumisesta.",
+  profileTitle:"Markkinointia, brändäystä ja designia",
+  profileLead:"",
+  profileBody:"Olen luova, tarkka ja parhaimmillani tiimityöskentelyssä. Minulla on kokemusta markkinoinnista, brändäyksestä, tekoälystä ja vastuullisuudesta kansainvälisissä ympäristöissä, ja opettelen jatkuvasti jotain uutta.\n\nTällä hetkellä teen markkinointia nature tech -startupissa Abu Dhabissa. Johdan luovia projekteja, suunnittelen kampanjoita, edustan yritystä konferensseissa, rakennan tekoälytyönkulkuja ja vastaan SEO-kehityksestä. Tätä ennen työskentelin innovaatiokonsultointiyrityksessä digimarkkinoinnin vastaavana ja startup scouttaajana. Lisäksi olen työskennellyt Nordealla ja Verohallinnolla asiakasrajapinnassa.\n\nIntohimoni urheiluun on ollut minulle polunnäyttäjänä markkinoinnin opinnoissa. Kirjoitin sekä kandidaatintutkielmani että pro graduni brändiuskollisuuden ja -pääoman rakentamisesta urheilijavaikuttajien avulla, ja valmistuin Oulun yliopistosta markkinoinnin maisteriksi. Nyt haluan rakentaa ja edistää ratkaisuja ja tuotteita, jotka auttavat ihmisiä ja tekevät hyvää ympäristölle.\n\nVapaa-ajalla kiipeilen, vaellan, pelaan jalkapalloa ja kokkaan. Matkustan myös paljon, sillä maailmankuvani laajentuu merkittävästi uusiin ihmisiin ja kulttuureihin tutustumalla.",
   facts:[
     {k:"Tutkinto", v:"Kauppatieteiden maisteri, markkinointi"},
     {k:"Yliopisto", v:"Oulun kauppakorkeakoulu"},
@@ -481,44 +482,44 @@ fi: {
   ],
 
   expEyebrow:"Työkokemus",
-  expTitle:"Verotusta, pankkia, e-urheilua ja mangroveja",
+  expTitle:"Markkinointia, verotusta, pankkialaa ja asiakastyötä",
   legMark:"Markkinointi ja brändityö",
   legAnal:"Analytiikka ja verotus",
   legServ:"Asiakastyö ja palvelu",
   jobs:[
-    {k:"mark", when:"6/2026–12/2026", title:"Markkinoinnin harjoittelija", org:"Nabat · Abu Dhabi",
+    {k:"mark", when:"2026", title:"Markkinoinnin harjoittelija", org:"Nabat · Abu Dhabi",
      text:"Teen startupissa markkinointia laajasti: verkkosivut ja SEO, some, kampanjat, video, HubSpot, tekoälyagentit, tapahtumat ja brändiuudistus. Kirjoitin briiffit ja arviot yli kymmenestä konferenssista Arabiemiraateissa, Saudi-Arabiassa ja Omanissa ja rakensin ”event in a box” -mallin, joka kattaa logistiikan, osallistumispäätökset ja jälkiraportoinnin. Rakensin myös ABM-kohdennuksen Persianlahden maihin ja Indonesiaan, mukaan lukien 92 organisaation prospektilistan."},
     {k:"anal", when:"2022, 2023 ja 2025", title:"Verosihteeri", org:"Verohallinto",
      text:"Vastasin palkansaajien, sijoittajien ja osakeyhtiöiden osakkaiden verovalvonnasta ja laadin verotuspäätöksiä. Hoidin tuhansia tapauksia: selvitin tulo- ja menovirtoja ja tulkitsin tuloverolakia usein monitulkintaisissa tilanteissa. Kehitin itselleni tehokkaat työtavat ja ylitin vuosittaiset määrätavoitteet 10–20 prosentilla. Sain asiakkailta ja esihenkilöiltä erinomaista palautetta."},
     {k:"mark", when:"2022–2023", title:"Marketing Specialist", org:"Kaira Clan",
-     text:"Kaira Clan oli suomalainen innovaatiokonsultointiyritys, joka toi yhteen pohjoismaisia startupeja ja suuryrityksiä. Vastasin yrityksen somekanavista ja niiden strategiasta ja autoin kumppaneita kampanjasuunnittelussa. Kävin läpi satoja pohjoismaisia startup- ja scale-up-yrityksiä autoteollisuuden innovaatiokeskuksen mahdollisiksi kumppaneiksi ja tuin tuotekonseptointia."},
+     text:"Kaira Clan oli suomalainen innovaatiokonsultointiyritys, joka yhdisti pohjoismaisia startupeja suuryritysten kanssa. Vastasin yrityksen somekanavista ja niiden strategiasta sekä tuin kumppaneitamme kampanjasuunnittelussa. Kävin läpi satoja pohjoismaisia startup- ja scale-up-yrityksiä autoteollisuuden innovaatiokeskuksen mahdollisiksi kumppaneiksi ja autoin tuotekonseptoinnissa."},
     {k:"serv", when:"2021", title:"Palveluneuvoja", org:"Nordea",
-     text:"Palvelin henkilöasiakkaita puhelimessa ja verkkopankin viesteissä, vuoden aikana tuhansia yhteydenottoja. Käsittelin muun muassa lainatarpeita ja vakuusasiakirjoja. Sain asiakkailta ja esihenkilöltä erinomaista palautetta lämpimästä, avuliaasta ja tehokkaasta palvelusta."},
+     text:"Palvelin henkilöasiakkaita puhelimitse ja verkkopankin viesteitse tuhansin yhteydenotoin työsuhteeni aikana. Käsittelin muun muassa lainatarpeita ja vakuusasiakirjoja. Sain asiakkailta ja esihenkilöltä erinomaista palautetta lämpimästä, ystävällisestä ja tehokkaasta palvelusta."},
     {k:"serv", when:"2019–2021", title:"Myyjä", org:"K-market Rajakylä",
-     text:"Päivittäistä asiakaspalvelua ja myymälätyötä opintojen ohessa."},
+     text:"Tein päivittäistä asiakaspalvelua ja myymälätyötä opintojeni ohessa."},
     {k:"mark", when:"2014", title:"Community Manager", org:"Zemeho",
-     text:"Ideoin tuotteita, esittelin Valinta-ohjelmistoa (musiikkiplugin mobiilipeleihin) Slushissa ja tein somesisältöä."}
+     text:"Ideoin tuotteita, esittelin Valinta-ohjelmistoa (musiikkipluginia mobiilipeleihin) Slushissa ja tein somesisältöä."}
   ],
 
   eduEyebrow:"Koulutus",
   eduTitle:"Kauppatieteet, markkinointi ja tietojenkäsittely",
   edu:[
-    {when:"2022–2025", title:"Ekonomi (KTM), markkinoinnin maisteri",
+    {when:"2022–2025", title:"Ekonomi (KTM), vastuullisen markkinoinnin maisteri",
      org:"Oulun kauppakorkeakoulu, Oulun yliopisto", items:[
-      "Valmistuin keväällä 2025 (120 op). Tutkinto keskittyi kokonaan markkinointiin.",
-      "Opinnot kattoivat brändijohtamisen ja brändin yhteisluonnin, kuluttajakäyttäytymisen, digitaalisen markkinoinnin, myynnin johtamisen, palvelujen ja B2B-markkinoinnin, yhteiskunnallisen markkinoinnin sekä vastuullisen liiketoiminnan ja laadulliset tutkimusmenetelmät.",
+      "Valmistuin keväällä 2025 (120 op).",
+      "Opintoni ja kurssityöni kattoivat brändijohtamisen ja brändin yhteisluonnin, kuluttajakäyttäytymisen, digitaalisen markkinoinnin, myynnin johtamisen, palvelujen ja B2B-markkinoinnin, yhteiskunnallisen markkinoinnin sekä vastuullisen liiketoiminnan ja laadulliset markkinointitutkimusmenetelmät.",
       "Pro gradu: ”Long-term impact of athlete endorsements on brand equity.”"
     ], link:{label:"Lue pro gradu OuluREPOssa", url:"https://oulurepo.oulu.fi/handle/10024/55767"}},
     {when:"2019–2022", title:"Kauppatieteiden kandidaatti (KTK)",
      org:"Oulun kauppakorkeakoulu, Oulun yliopisto", items:[
       "Valmistuin keväällä 2022 (180 op).",
-      "Kurssit jakautuivat tasaisesti rahoituksen, kansainvälisen liikkeenjohdon, markkinoinnin, laskentatoimen ja taloustieteen välillä.",
-      "Sivuaine: tietojenkäsittelytiede.",
+      "Kurssini jakautuivat tasaisesti rahoituksen, kansainvälisen liikkeenjohdon, markkinoinnin, laskentatoimen ja taloustieteiden opintojen välillä.",
+      "Sivuaine: tietojenkäsittelytieteet.",
       "Kandidaatintutkielma: ”Can athletes create brand loyalty? The role of sporting celebrity endorsements in building brand loyalty.”"
     ], link:{label:"Lue kandidaatintutkielma OuluREPOssa", url:"https://oulurepo.oulu.fi/handle/10024/21006"}},
     {when:"2021", title:"KEDGE Business School, Marseille", items:[
-      "Vaihto-opiskeluvuosi kandidaattivaiheen aikana.",
-      "Opinnot painottuivat markkinointiin, viestintään ja rahoitukseen."
+      "Vaihto-opiskeluvuosi kandidaattivaiheeni aikana.",
+      "Opintoni painottuivat markkinointiin, viestintään ja rahoitukseen."
     ]},
     {when:"2015–2018", title:"Oulun Lyseon lukio, IB-linja", items:[
       "International Baccalaureate -tutkinto englanniksi."
@@ -535,8 +536,8 @@ fi: {
   ],
 
   langEyebrow:"Kielet",
-  langTitle:"Kaksikielinen, kansainvälinen tausta",
-  langBody:"Kävin lukion ja maisteriopintoni englanniksi ja työskentelen englanniksi Abu Dhabissa kansainvälisessä ja monikulttuurisessa ympäristössä.",
+  langTitle:"Kaksikielinen ja kansainvälinen tausta",
+  langBody:"Kävin lukion ja maisteriopintoni englanniksi. Tällä hetkellä työskentelen Abu Dhabissa kansainvälisessä ja monikulttuurisessa ympäristössä.",
   langs:[
     {n:"Suomi", l:"Äidinkieli", v:4},
     {n:"Englanti", l:"Natiivitaso", v:4},
@@ -546,7 +547,7 @@ fi: {
 
   lifeEyebrow:"Vapaa-ajalla",
   lifeTitle:"Luonto, liikunta ja tekniikka",
-  lifeBody:"Olen eräkävijä, kiipeilijä, e-urheilusta kiinnostunut urheilun rakastaja. Pelasin jalkapalloa kymmenen vuotta, joista viimeiset kolme kapteenina. Matkustan vuosittain: viimeksi Indonesiassa, Tansaaniassa ja Vietnamissa. Muuten aikaa kuluu sisällöntuotantoon, tietokoneisiin ja hyvinvointiin.",
+  lifeBody:"Olen eräkävijä, kiipeilijä ja e-urheilusta kiinnostunut urheilun rakastaja. Pelasin jalkapalloa kymmenen vuotta, joista viimeiset kolme kapteenina. Matkustan vuosittain; nyt viimeisimpänä Indonesiassa, Tansaniassa ja Vietnamissa. Muuten aikaa kuluu sisällöntuotantoon, tietotekniikkaan ja hyvinvointiin.",
   gallery:[
     {src:"hiking.jpg",     alt:"Ossi vaeltamassa suomalaisessa metsässä"},
     {src:"bouldering.jpg", alt:"Ossi boulderoimassa kalliolla", pos:"center 42%"},
@@ -554,8 +555,8 @@ fi: {
   ],
 
   ctaEyebrow:"Yhteystiedot",
-  ctaTitle:"Etsin seuraavaa tehtävää, mieluiten pääkaupunkiseudulta",
-  ctaBody:"Työsopimukseni Nabatilla päättyy joulukuussa 2026. Kiinnostavat myös tehtävät muualla Suomessa ja Euroopassa, ulkomailla sekä etätyönä. Parhaiten sovin työhön, jossa luova markkinointi ja tekninen, analyyttinen ote kohtaavat. Nopeimmin tavoitat minut sähköpostilla.",
+  ctaTitle:"Etsin seuraavaa tehtävää pääkaupunkiseudulta",
+  ctaBody:"Työharjoitteluni Nabatilla päättyy joulukuussa 2026. Minua kiinnostavat tehtävät Suomessa ja Euroopassa. Parhaiten sovin työhön, jossa luova markkinointi ja tekninen, analyyttinen ote kohtaavat.\n\nSoita tai laita viestiä, niin voin kertoa mielelläni lisää itsestäni ja siitä, miten voin auttaa sinua saavuttamaan tavoitteesi.",
   ctaCv:"Lataa CV (PDF)",
   cvFile:"CV_Ossi_Juusola_FI.pdf",
   refs:"Suosittelijat ja työtodistukset pyydettäessä.",
@@ -569,7 +570,7 @@ en: {
   heroKicker:"Ossi Juusola · Business & Marketing Master's Graduate",
   heroGreet:"Hi, I'm Ossi.",
   heroWelcome:"Welcome!",
-  heroThesis:"Marketer, brand strategist and rock climber. Currently a marketing intern at a nature tech startup in Abu Dhabi.",
+  heroThesis:"I'm a marketer, brand strategist and creative designer. Currently a marketing intern at a nature tech startup in Abu Dhabi.",
   scrollCue:"Scroll down",
 
   navProfile:"Profile", navNow:"Current role", navExp:"Experience",
@@ -577,11 +578,11 @@ en: {
   navLife:"In my free time", navContact:"Contact",
 
   profileEyebrow:"Profile",
-  profileTitle:"Marketing, design and AI",
-  profileLead:"Creative, detail-minded and at my best working in teams. I've experience in international environments across AI, sustainability, marketing, and branding and I'm always learning something new.",
-  profileBody:"I work in marketing at a startup in Abu Dhabi, where I lead creative projects, plan campaigns and events, represent the company at conferences, build AI workflows and own our SEO plan. Before that I worked at an innovation consultancy, a bank and the Finnish Tax Administration, in roles that put me in front of customers.\n\nSport is what got me into marketing. I wrote both my bachelor\'s and master\'s theses on how athletes build brand loyalty and brand equity, and I graduated with a Master of Science in marketing from the University of Oulu. Today I want to build solutions and products that help people and do some good for the environment.\n\nIn my free time I climb, hike, play football and travel, and meeting new people from other cultures is what keeps me inspired.",
+  profileTitle:"Marketing, branding and design",
+  profileLead:"",
+  profileBody:"I am creative, detail-minded and at my best working in teams. I've experience in international environments across AI, sustainability, marketing, and branding and I'm always learning something new.\n\nNow I work in marketing at a startup in Abu Dhabi, where I lead creative projects, plan campaigns and events, represent the company at conferences, build AI workflows and own our SEO plan. Before that I worked at an innovation consultancy, a bank and the Finnish Tax Administration, in roles that put me in front of customers.\n\nSports is what got me into marketing. In both my bachelor's and master's theses I researched how athletes can build brand loyalty and brand equity, and I graduated with a Master of Science in sustainable marketing from the University of Oulu. Today I want to build and contribute to solutions and products that help people and do good for the environment.\n\nIn my free time I rock climb, hike, play football and travel, and meeting new people from other cultures is what keeps me inspired.",
   facts:[
-    {k:"Degree", v:"M.Sc. in marketing"},
+    {k:"Degree", v:"M.Sc. in sustainable marketing"},
     {k:"University", v:"Oulu Business School, 2025"},
     {k:"Now", v:"Marketing intern in Abu Dhabi"}
   ],
@@ -600,19 +601,19 @@ en: {
   ],
 
   expEyebrow:"Experience",
-  expTitle:"Tax files, bank calls, esports and mangroves",
+  expTitle:"Marketing, taxation, banking and customer service",
   legMark:"Marketing & branding",
   legAnal:"Analytics & specialist work",
   legServ:"Customer-facing work",
   jobs:[
-    {k:"mark", when:"Jun–Dec 2026", title:"Marketing Intern", org:"Nabat · Abu Dhabi",
+    {k:"mark", when:"2026", title:"Marketing Intern", org:"Nabat · Abu Dhabi",
      text:"Broad hands-on marketing in a startup: website and SEO, social media, campaigns, video, HubSpot, AI agents, events and the rebrand. Wrote briefs and fit analyses for 10+ conferences in the UAE, Saudi Arabia and Oman, and built an “event in a box” framework covering logistics, which events to attend and post-event reporting. Also built ABM targeting across the GCC and Indonesia, including a 92-organisation prospect list."},
     {k:"anal", when:"2022, 2023 and 2025", title:"Senior Tax Clerk", org:"Finnish Tax Administration",
      text:"Tax supervision of wage earners, private investors and shareholders of limited companies: examining, correcting and adjusting tax returns. Handled thousands of cases, tracing income and expenditure flows and interpreting income tax law in cases that were often ambiguous. Developed my own efficient ways of working and beat the yearly volume targets by 10–20%, with excellent feedback from customers and management."},
     {k:"mark", when:"2022–2023", title:"Marketing Specialist", org:"Kaira Clan",
      text:"Kaira Clan was a Finnish innovation consultancy that connected Nordic startups with large corporations. I led the social media strategy for the company’s LinkedIn, Facebook and Instagram, and helped partners plan their campaign launches. I screened hundreds of Nordic startups and scale-ups as potential partners for an automotive innovation hub, and supported product concept development."},
     {k:"serv", when:"2021", title:"Service Advisor", org:"Nordea",
-     text:"Served private customers by phone and online banking messages: thousands of contacts over the year, including loan needs and collateral documents. Received excellent feedback from customers and my manager for warm, helpful and efficient service."},
+     text:"Worked with private customers by phone and online banking messages: thousands of contacts over the year, including loan needs and collateral documents. Received excellent feedback from customers and my manager for professional, helpful and efficient service."},
     {k:"serv", when:"2019–2021", title:"Sales Person", org:"K-market Rajakylä",
      text:"Daily customer service and store work alongside university studies."},
     {k:"mark", when:"2014", title:"Community Manager", org:"Zemeho",
@@ -622,21 +623,21 @@ en: {
   eduEyebrow:"Education",
   eduTitle:"Business, marketing and computer science",
   edu:[
-    {when:"2022–2025", title:"Master of Science in Marketing",
+    {when:"2022–2025", title:"Master of Science in Sustainable Marketing",
      org:"Oulu Business School, University of Oulu", items:[
-      "Graduated spring 2025 (120 ECTS). The degree focused entirely on marketing.",
-      "Coursework covered brand management and brand co-creation, consumer behaviour, digital marketing, sales management, service and B2B marketing, social marketing, globally responsible business and qualitative research methods.",
-      "Master's thesis: the effect of athlete endorsement marketing on brand equity."
+      "Graduated spring 2025 (120 ECTS).",
+      "Courses and project work covered brand management and brand co-creation, consumer behaviour, digital marketing, sales management, service and B2B marketing, social marketing, responsible business and qualitative marketing research methods.",
+      "Master's thesis: “Long-term impact of athlete endorsements on brand equity”"
     ], link:{label:"Read the master's thesis in OuluREPO", url:"https://oulurepo.oulu.fi/handle/10024/55767"}},
     {when:"2019–2022", title:"Bachelor of Science in Economics and Business Administration",
      org:"Oulu Business School, University of Oulu", items:[
       "Graduated spring 2022 (180 ECTS).",
-      "Coursework was split evenly across finance, international business management, marketing, accounting and economics.",
+      "My courses were split evenly across studies in finance, international business management, marketing, accounting and economics.",
       "Minor: computer science.",
       "Bachelor's thesis: “Can athletes create brand loyalty? The role of sporting celebrity endorsements in building brand loyalty.”"
     ], link:{label:"Read the bachelor's thesis in OuluREPO", url:"https://oulurepo.oulu.fi/handle/10024/21006"}},
     {when:"2021", title:"KEDGE Business School, Marseille", items:[
-      "Exchange year during my bachelor's studies.",
+      "Host university during my exchange program.",
       "Studies focused on marketing, communication and finance."
     ]},
     {when:"2015–2018", title:"Oulu Lyseo High School, IB programme", items:[
@@ -654,8 +655,8 @@ en: {
   ],
 
   langEyebrow:"Languages",
-  langTitle:"Bilingual, international background",
-  langBody:"I completed both high school and my Master's degree in English, and I work in English in an international and multicultural environment in Abu Dhabi.",
+  langTitle:"Bilingual with an international background",
+  langBody:"I completed my elementary, high school and my Master's degree in English. Now I work in an international and multicultural environment in Abu Dhabi.",
   langs:[
     {n:"Finnish", l:"Native", v:4},
     {n:"English", l:"Native level", v:4},
@@ -673,8 +674,8 @@ en: {
   ],
 
   ctaEyebrow:"Contact",
-  ctaTitle:"Looking for my next role, ideally in the Helsinki area",
-  ctaBody:"My contract at Nabat ends in December 2026. I'm also open to roles elsewhere in Finland and Europe, abroad and remote. The best fit is work where creative marketing meets a technical, analytical side. Email is the fastest way to reach me.",
+  ctaTitle:"Looking for my next role in the Helsinki area",
+  ctaBody:"My internship at Nabat ends in December 2026. I'm also open to roles elsewhere in Finland, Europe and remotely. The best fit is work where creative marketing meets the strategic and analytical side of marketing.\n\nFeel free to call or message me. I'd be glad to tell you more about myself and how I can help you reach your goals.",
   ctaCv:"Download CV (PDF)",
   cvFile:"CV_Ossi_Juusola_EN.pdf",
   refs:"References and work certificates available on request.",
