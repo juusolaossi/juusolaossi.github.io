@@ -201,6 +201,36 @@ p:last-child{margin-bottom:0}
   color:var(--valo);margin-bottom:.25rem;font-weight:600}
 .duties span{font-size:.97rem;color:rgba(242,244,241,.72);line-height:1.55}
 
+/* ============ what I can do for you — offer · how · proof ============ */
+.svcintro{margin:0 0 2.5rem;max-width:none}
+.svclist{display:grid;gap:1rem}
+.svc{
+  background:var(--valo);border:1px solid rgba(22,48,42,.09);border-radius:5px;
+  padding:1.5rem;display:grid;gap:1.5rem;
+}
+@media (min-width:64rem){
+  .svc{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1fr);gap:0;padding:2rem 0}
+  .svc > div{padding:0 2.1rem}
+  .svc > div + div{border-left:1px solid var(--koivu)}
+}
+@media (max-width:63.99rem){
+  .svc > div + div{border-top:1px solid var(--koivu);padding-top:1.3rem}
+}
+.svc .num{font-family:var(--display);font-weight:600;font-size:.76rem;letter-spacing:.16em;
+  color:var(--jarvi);margin:0 0 .55rem}
+.svc h3{font-size:1.32rem;line-height:1.2;letter-spacing:-.015em;margin:0 0 1.1rem}
+.svc .pitch{font-size:1.02rem;line-height:1.5;color:var(--kallio);margin:0 0 1.3rem}
+.svc .aud{margin:0;display:grid;gap:.85rem}
+.svc .aud dt,.svc h4{font-family:var(--display);font-weight:600;font-size:.7rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--sammal);margin:0 0 .3rem}
+.svc .aud dd{margin:0;font-size:.95rem;line-height:1.5}
+.svc h4{margin-bottom:.85rem}
+.svc ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+.svc li{font-size:.95rem;line-height:1.5;padding-left:1.15rem;position:relative}
+.svc .how li::before{content:"";position:absolute;left:0;top:.75em;width:.5rem;height:1px;background:var(--jarvi)}
+.svc .proof li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;
+  border-radius:1px;background:var(--sammal)}
+
 /* ============ experience — colour-banded cards ============ */
 .legend{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;margin:0 0 2rem;padding:0;list-style:none}
 .legend li{font-family:var(--display);font-size:.74rem;letter-spacing:.08em;
@@ -360,6 +390,15 @@ p:last-child{margin-bottom:0}
     </div>
   </section>
 
+  <!-- ============ WHAT I CAN DO FOR YOU ============ -->
+  <section class="slab t-birch" id="palvelut" data-theme="light">
+    <div class="wrap rise">
+      <p class="eyebrow" data-t="svcEyebrow"></p>
+      <h2 class="svcintro" data-t="svcTitle"></h2>
+      <div class="svclist" data-list="services"></div>
+    </div>
+  </section>
+
   <!-- ============ EXPERIENCE ============ -->
   <section class="slab t-light" id="kokemus" data-theme="light">
     <div class="wrap rise">
@@ -454,7 +493,7 @@ fi: {
   heroThesis:"Olen markkinoija, brändistrategi ja luova designeri. Tällä hetkellä markkinoinnin harjoittelijana nature tech -startupissa Abu Dhabissa.",
   scrollCue:"Selaa alas",
 
-  navProfile:"Profiili", navNow:"Nykyinen tehtävä", navExp:"Työkokemus",
+  navProfile:"Profiili", navNow:"Nykyinen tehtävä", navSvc:"Mitä tarjoan", navExp:"Työkokemus",
   navEdu:"Koulutus", navSkills:"Osaaminen", navLang:"Kielet",
   navLife:"Vapaa-ajalla", navContact:"Yhteystiedot",
 
@@ -479,6 +518,93 @@ fi: {
     {b:"Brändiuudistus", t:"Olin mukana toteuttamassa koko yrityksen brändiuudistuksen jalkauttamista. Rakensin yhdessä designerimme kanssa uudistetut Office-pohjat ja -teemat, käyntikortit, verkkosivut, brändivisuaalit, henkilöstön ohjeet ja muut keskeiset brändimateriaalit."},
     {b:"Tapahtumat", t:"Edustin yritystä kansainvälisissä tekoäly-, vastuullisuus- ja T&K-konferensseissa yhdessä BD-tiimin kanssa. Vastasin siitä, mihin ja miten tapahtumiin osallistumme. Analysoin yli 15 kansainvälistä tapahtumaa ja laadin jokaisesta briiffin ja osallistumisstrategian."},
     {b:"Luova suunnittelu ja video", t:"Tein brändin mukaisia visuaaleja kampanjoihin, someen ja verkkosivuille Figmalla, Adobe Creative Suitella, DaVinci Resolvella, Canvalla ja tekoälypohjaisilla suunnittelutyökaluilla. Johdin useita tapahtuma-, brändi- ja tuotevideoiden tuotantoja."}
+  ],
+
+  svcEyebrow:"Mitä tarjoan",
+  svcTitle:"Mitä voin tehdä sinulle",
+  svcTeam:"Tiimillesi",
+  svcClients:"Asiakkaillesi",
+  svcHow:"Miten teen sen",
+  svcProof:"Kokemus ja näytöt",
+  services:[
+    {h:"Tekoälyllä toimiva markkinointi",
+     team:"Rutiininomainen sisältö- ja raportointityö tekoälylle brändin laadusta tinkimättä.",
+     clients:"Brändin mukaista sisältöä ja raportointia jokaiselle asiakkaalle yhdestä uudelleenkäytettävästä järjestelmästä.",
+     how:[
+       "Muutan brändiohjeet ja aiemman sisällön tekoälyn brändikirjastoksi",
+       "Rakennan tehtäväkohtaisia agentteja, kuten copywriterin ja itsenäisen tarkastajan",
+       "Automatisoin toistuvan raportoinnin ja dashboardit"
+     ],
+     proof:[
+       "Rakensin tekoälyllä toimivan sometoimiston, jolla Nabatin somen hallinta siirtyy talon sisälle",
+       "Rakensin toistettavan kuukausidashboardin",
+       "Clauden Projects, Skills, Design ja koodi"
+     ]},
+    {h:"SEO ja näkyvyys tekoälyhauissa",
+     team:"Vaiheistettu SEO-suunnitelma ja tekijä, joka vie sen maaliin.",
+     clients:"Auditoinnit, avainsanatutkimukset ja toimenpidesuunnitelmat suomeksi tai englanniksi.",
+     how:[
+       "Auditoin sivuston ja tutkin avainsanat",
+       "Priorisoin korjaukset vaiheistetuksi suunnitelmaksi",
+       "Briiffaan ja arvioin SEO-toimistojen ja kirjoittajien työn"
+     ],
+     proof:[
+       "Vastaan Nabatin kolmen kuukauden SEO-suunnitelmasta",
+       "Olin mukana kasvattamassa ei-brändättyjen hakujen näyttökertoja 97 % ja nelinkertaistamassa tekoälyavustajista tulevat käynnit",
+       "Freelance-SEO-projekti oululaiselle yritykselle"
+     ]},
+    {h:"Verkkosivujen rakenne ja design",
+     team:"Sivurakenteet ja designit valmiina kehittäjille tai verkkotoimistolle.",
+     clients:"Selkeät sivukartat ja Figma-layoutit monimutkaisillekin tarjoomille.",
+     how:[
+       "Jäsennän tarjooman alusta-, ratkaisu- ja tuotesivuiksi",
+       "Suunnittelen layoutit ja sivupohjat Figmassa",
+       "Rakennan sivuja tarvittaessa HTML:llä, CSS:llä ja Reactilla"
+     ],
+     proof:[
+       "Suunnittelin rakenteen Nabatin sivuston laajennukselle, noin 25 uutta sivua",
+       "Olin mukana kasvattamassa demo- ja yhteydenottopyyntöjä 72 %",
+       "Rakensin tämän sivuston ja Toe Hook -ajastinsovelluksen"
+     ]},
+    {h:"B2B-kysynnän luonti ja ABM",
+     team:"Kohdeasiakkaat, segmenttiviestit ja HubSpot-työnkulut, joita myynti oikeasti käyttää.",
+     clients:"Segmentointia ja viestintää, joilla mainosbudjetti tekee enemmän.",
+     how:[
+       "Luokittelen ihanneasiakkaat ja kartoitan kohdeyritykset",
+       "Rakennan asiakastarveryhmät, jotka ohjaavat kunkin segmentin viestiä",
+       "Toteutan monikanavaiset kampanjat ja HubSpot-työnkulut"
+     ],
+     proof:[
+       "Rakensin 7 asiakastarveryhmää Nabatin mainosluovien pohjaksi",
+       "Koordinoin ABM-kampanjan kuudessa kanavassa",
+       "Kartoitin kohdeasiakkaat Persianlahden maissa ja Indonesiassa"
+     ]},
+    {h:"Brändin jalkautus ja luova työ",
+     team:"Pohjat ja ohjeet, joilla koko yritys käyttää brändiä oikein.",
+     clients:"Uusi ilme kaikkiin kosketuspisteisiin sekä kampanjavisuaalit ja videot.",
+     how:[
+       "Muutan brändiohjeet Office-pohjiksi ja -teemoiksi",
+       "Jalkautan brändin kaikkiin kosketuspisteisiin",
+       "Teen visuaaleja ja videoita kampanjoihin ja someen"
+     ],
+     proof:[
+       "Toteutin Nabatin brändiuudistuksen jalkautuksen koko yritykseen",
+       "Koordinoin NabatOS-brändielokuvan tuotannon luovan toimistomme kanssa",
+       "Rakennan omaa ulkoilubrändiäni, Toe Hookia"
+     ]},
+    {h:"Urheilu-, e-urheilu- ja vaikuttajamarkkinointi",
+     team:"Urheilu- ja pelikulttuurin tuntemusta sisältä päin, tutkimuksella vahvistettuna.",
+     clients:"Urheilija-, vaikuttaja- ja sisällöntuottajayhteistyöt, jotka kasvattavat brändipääomaa pitkäjänteisesti.",
+     how:[
+       "Valitsen brändiin sopivat urheilijat, vaikuttajat ja sisällöntuottajat",
+       "Suunnittelen pitkäkestoisia kumppanuuksia kertapostausten sijaan",
+       "Mittaan vaikutuksen tunnettuuteen, uskollisuuteen ja brändipääomaan"
+     ],
+     proof:[
+       "Kandidaatintutkielma ja pro gradu urheilijayhteistyöstä, brändiuskollisuudesta ja brändipääomasta",
+       "Vaikuttajamarkkinointi keskeisenä teemana tutkimuksissani ja opintoprojekteissani",
+       "Seuraan tiiviisti ammattilaisurheilua ja e-urheilua; entinen jalkapallokapteeni ja pitkän linjan pelaaja"
+     ]}
   ],
 
   expEyebrow:"Työkokemus",
@@ -573,7 +699,7 @@ en: {
   heroThesis:"I'm a marketer, brand strategist and creative designer. Currently a marketing intern at a nature tech startup in Abu Dhabi.",
   scrollCue:"Scroll down",
 
-  navProfile:"Profile", navNow:"Current role", navExp:"Experience",
+  navProfile:"Profile", navNow:"Current role", navSvc:"What I offer", navExp:"Experience",
   navEdu:"Education", navSkills:"Skills", navLang:"Languages",
   navLife:"In my free time", navContact:"Contact",
 
@@ -598,6 +724,93 @@ en: {
     {b:"Brand rollout", t:"Helped deliver the company-wide rebrand. Worked closely with our designer to build rebranded Office templates and themes, business cards, web pages, email signatures, brand visuals, staff guides and other core brand materials."},
     {b:"Events", t:"Represented the company at international AI, sustainability and R&D events together with the business development team. Ran the process for deciding which events to attend: analysed 15+ international events and wrote briefs and recommendations for each."},
     {b:"Creative design & video", t:"Created branded visual assets for campaigns, social media and the website, using Figma, Adobe Creative Suite, DaVinci Resolve, Canva and AI-based design tools. Led several event, brand and product video productions."}
+  ],
+
+  svcEyebrow:"What I offer",
+  svcTitle:"What I can do for you",
+  svcTeam:"For your team",
+  svcClients:"For your clients",
+  svcHow:"How I do it",
+  svcProof:"Experience & proof",
+  services:[
+    {h:"AI marketing systems",
+     team:"Routine content and reporting handled by AI, without losing brand quality.",
+     clients:"On-brand content and reporting for every client from one reusable system.",
+     how:[
+       "Turn brand guidelines and past content into an AI brand knowledge base",
+       "Build task-specific agents, like a copywriter and an independent reviewer",
+       "Automate recurring reporting and dashboards"
+     ],
+     proof:[
+       "Built an AI-run social media agency to bring Nabat's social media in-house",
+       "Built a repeatable monthly dashboard system",
+       "Claude Projects, Skills, Design and code"
+     ]},
+    {h:"SEO & AI search visibility",
+     team:"A phased SEO plan and someone who keeps it moving.",
+     clients:"Audits, keyword research and action plans in English or Finnish.",
+     how:[
+       "Audit the site and research keywords",
+       "Prioritise fixes into a phased plan",
+       "Brief and review SEO agencies and writers"
+     ],
+     proof:[
+       "Own Nabat's three-month SEO plan",
+       "Contributed to unbranded search impressions +97% and 4× more visits from AI assistants",
+       "Freelance SEO project for a business in Oulu"
+     ]},
+    {h:"Website structure & design",
+     team:"Page structures and designs ready for your developers or web agency.",
+     clients:"Clear sitemaps and Figma layouts for complex offerings.",
+     how:[
+       "Structure the offering into platform, solution and product pages",
+       "Design layouts and page templates in Figma",
+       "Build pages in HTML, CSS and React when needed"
+     ],
+     proof:[
+       "Designed the structure for Nabat's site expansion, around 25 new pages",
+       "Contributed to demo and contact requests rising 72%",
+       "Built this website and the Toe Hook timer app"
+     ]},
+    {h:"B2B demand generation & ABM",
+     team:"Target accounts, segment messaging and HubSpot workflows that sales will use.",
+     clients:"Segmentation and messaging that make paid budgets work harder.",
+     how:[
+       "Tier ideal customers and map target accounts",
+       "Build needs clusters that shape each segment's message",
+       "Run multi-channel campaigns and HubSpot workflows"
+     ],
+     proof:[
+       "Built 7 customer needs clusters behind Nabat's ad creative",
+       "Coordinated an ABM campaign across 6 channels",
+       "Mapped target accounts across the GCC and Indonesia"
+     ]},
+    {h:"Brand rollout & creative",
+     team:"Templates and guides that help everyone use the brand correctly.",
+     clients:"New identities rolled out everywhere, plus campaign visuals and video.",
+     how:[
+       "Turn brand guidelines into Office templates and themes",
+       "Roll the brand out across every touchpoint",
+       "Create visuals and video for campaigns and social media"
+     ],
+     proof:[
+       "Delivered Nabat's company-wide rebrand rollout",
+       "Coordinated the NabatOS brand film with our creative agency",
+       "Building my own outdoor brand, Toe Hook"
+     ]},
+    {h:"Sports, esports & influencer marketing",
+     team:"Insider knowledge of sports and gaming culture, backed by research.",
+     clients:"Athlete, influencer and creator partnerships that build lasting brand equity.",
+     how:[
+       "Match athletes, influencers and creators to the brand",
+       "Plan long-term partnerships instead of one-off posts",
+       "Measure the impact on awareness, loyalty and brand equity"
+     ],
+     proof:[
+       "Bachelor's and master's theses on athlete endorsements, brand loyalty and brand equity",
+       "Influencer marketing as a central theme of my research and academic projects",
+       "Follow pro sports and esports closely; former football captain and lifelong gamer"
+     ]}
   ],
 
   expEyebrow:"Experience",
@@ -687,6 +900,7 @@ en: {
 const SECTIONS = [
   {id:"profiili", key:"navProfile"},
   {id:"nyt",      key:"navNow"},
+  {id:"palvelut", key:"navSvc"},
   {id:"kokemus",  key:"navExp"},
   {id:"koulutus", key:"navEdu"},
   {id:"osaaminen",key:"navSkills"},
@@ -697,7 +911,22 @@ const SECTIONS = [
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
+let CUR = null; /* current language block, so list builders can read labels */
 const BUILD = {
+  services: (s, i) => `<article class="svc">
+      <div>
+        <p class="num">${String(i + 1).padStart(2, '0')}</p>
+        <h3>${esc(s.h)}</h3>
+        <dl class="aud">
+          <div><dt>${esc(CUR.svcTeam)}</dt><dd>${esc(s.team)}</dd></div>
+          <div><dt>${esc(CUR.svcClients)}</dt><dd>${esc(s.clients)}</dd></div>
+        </dl>
+      </div>
+      <div class="how"><h4>${esc(CUR.svcHow)}</h4>
+        <ul>${s.how.map(t => `<li>${esc(t)}</li>`).join('')}</ul></div>
+      <div class="proof"><h4>${esc(CUR.svcProof)}</h4>
+        <ul>${s.proof.map(t => `<li>${esc(t)}</li>`).join('')}</ul></div>
+    </article>`,
   facts: f => `<div class="fact"><dt>${esc(f.k)}</dt><dd>${esc(f.v)}</dd></div>`,
   duties: d => `<li><b>${esc(d.b)}</b><span>${esc(d.t)}</span></li>`,
   jobs: j => `<article class="job ${esc(j.k)}">
@@ -746,6 +975,7 @@ function wireNavHover(){
 
 function render(lang){
   const c = CONTENT[lang];
+  CUR = c;
   document.documentElement.lang = c.htmlLang;
   document.querySelectorAll('[data-t]').forEach(el => {
     const v = c[el.dataset.t];
